@@ -5,6 +5,9 @@
 ## Calculator
 - [Open the calculator](https://filamentcostcalculator.com/): A $20, 1,000 g spool and a 50 g print cost $1.10 when 10% extra material is included.
 
+## Guide
+- [How to filament cost calculator](https://filamentcostcalculator.com/guide/): measurement inputs, formula, assumptions, limits and a worked example.
+
 ## Method
 Divide spool price by net spool weight in grams to get cost per gram. Multiply by print weight and by one plus your extra-material percentage. Use the slicer total including supports and purge when available; only add an allowance for material that total excludes.
 
