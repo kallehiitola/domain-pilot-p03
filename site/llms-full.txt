@@ -6,7 +6,7 @@
 - [Open the calculator](https://filamentcostcalculator.com/): A $20, 1,000 g spool and a 50 g print cost $1.10 when 10% extra material is included.
 
 ## Guide
-- [How to filament cost calculator](https://filamentcostcalculator.com/guide/): measurement inputs, formula, assumptions, limits and a worked example.
+- [How to calculate the filament cost of a 3D print](https://filamentcostcalculator.com/guide/): step-by-step measuring, common mistakes, formula, limits and a worked example.
 
 ## Method
 Divide spool price by net spool weight in grams to get cost per gram. Multiply by print weight and by one plus your extra-material percentage. Use the slicer total including supports and purge when available; only add an allowance for material that total excludes.
@@ -21,6 +21,17 @@ Net spool weight means filament only, not the empty spool. The allowance is opti
 ## Sources
 - [Original Prusa: 3D printing price calculator](https://blog.prusa3d.com/3d-printing-price-calculator_38905/)
 - [NIST: SI units and measurement](https://www.nist.gov/pml/owm/metric-si/si-units)
+
+## Step by step
+1. Slice the model and read the estimated filament weight in grams from the slicer.
+2. Note the spool price and the net filament weight printed on the spool. The empty reel is not included.
+3. Add material the sliced file does not include, such as failed starts, test prints or reprinted parts.
+4. Divide the spool price by its net weight for the cost per gram, then multiply by the total grams.
+
+## Common mistakes
+- Using the gross weight including the empty reel, which makes each gram look cheaper than it is.
+- Forgetting failed or reprinted parts when pricing a job.
+- Treating material cost as the full print cost. Electricity, machine wear and your time are separate.
 
 ## Worked examples
 ### Example 1
