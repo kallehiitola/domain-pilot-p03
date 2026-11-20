@@ -1,23 +1,26 @@
 # Filament cost calculator
 
-> Calculate the material cost of a print from its slicer weight and the net filament weight and price of a spool. Electricity, labor and machine wear are separate costs.
+> Calculate exact 3D print material cost from slicer weight, net spool weight, and spool price, with optional printer electricity cost and a filament density reference table.
 
 ## Calculator
-- [Open the calculator](https://filamentcostcalculator.com/): A $20, 1,000 g spool and a 50 g print cost $1.10 when 10% extra material is included.
+- [Open the calculator](https://filamentcostcalculator.com/): With electricity: a 120 g print (+10% extra) on a $25/kg spool running 5 hours at 120 W ($0.16/kWh) costs $3.30 material + $0.10 power = $3.40. Material only: a $20, 1,000 g spool and a 50 g print cost $1.10 when 10% extra material is included ($0.0200/g).
 
 ## Guide
-- [How to calculate the filament cost of a 3D print](https://filamentcostcalculator.com/guide/): step-by-step measuring, common mistakes, formula, limits and a worked example.
+- [How to calculate the filament cost of a 3D print](https://filamentcostcalculator.com/guide/): step-by-step measuring, common mistakes, and ordering checklist.
 
-## Method
-Divide spool price by net spool weight in grams to get cost per gram. Multiply by print weight and by one plus your extra-material percentage. Use the slicer total including supports and purge when available; only add an allowance for material that total excludes.
+## Formula and method
+Cost per gram = spool price / net spool weight; Material cost = cost per gram × print weight × (1 + extra / 100); Electricity cost = (printer watts / 1000) × print hours × rate per kWh.
+
+Divide spool price by net filament weight in grams to obtain unit cost per gram. Multiply by slicer material weight adjusted for any uncounted waste percentage. When electricity is enabled, multiply average wattage in kilowatts by print duration and your local energy tariff.
 
 ## Limits
-Net spool weight means filament only, not the empty spool. The allowance is optional, not a recommended failure rate. Costs use the currency you select; the calculator does not convert exchange rates. This is material cost, not a selling price.
+Net spool weight means plastic only—exclude the empty reel weight (often 180 g to 260 g). Changing the currency label does not convert exchange rates. Printer depreciation, failed jobs, post-processing, and labor are separate from material and power cost.
 
 ## Supporting pages
 - [Method and assumptions](https://filamentcostcalculator.com/method/)
 - [About, editorial responsibility and privacy](https://filamentcostcalculator.com/about/)
 
 ## Sources
-- [Original Prusa: 3D printing price calculator](https://blog.prusa3d.com/3d-printing-price-calculator_38905/)
-- [NIST: SI units and measurement](https://www.nist.gov/pml/owm/metric-si/si-units)
+- [Original Prusa: 3D printing price calculator guide](https://blog.prusa3d.com/3d-printing-price-calculator_38905/)
+- [Prusa Help: Filament material guide](https://help.prusa3d.com/filament-material-guide)
+- [Wikipedia: 3D printing filament materials](https://en.wikipedia.org/wiki/3D_printing_filament)
